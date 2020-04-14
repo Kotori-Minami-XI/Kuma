@@ -11,8 +11,9 @@ import org.junit.Test;
 
 
 public class HibernateTest {
-    @Test @SneakyThrows
+    @Test
     public void test() {
+
         // 载入配置文件
         Configuration configure = new Configuration().configure();
         // 获取连接池
