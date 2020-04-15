@@ -16,6 +16,13 @@
         <property name="cust_phone" column="cust_phone"></property>
         <property name="cust_source" column="cust_source"></property>
 
+        <!-- 一对多 -->
+        <set name="linkmans" cascade="save-update
+        ,delete" inverse="true">
+            <key column="link_cust_id"></key> <!-- column存放外键 -->
+            <one-to-many class="com.Kotori.domain.Linkman"></one-to-many>
+        </set>
+
     </class>
 
 </hibernate-mapping>

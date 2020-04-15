@@ -2,6 +2,10 @@ package com.Kotori.domain;
 
 import lombok.Getter;
         import lombok.Setter;
+import lombok.ToString;
+
+import java.util.HashSet;
+import java.util.Set;
 
 @Getter @Setter
 public class Customer {
@@ -13,6 +17,9 @@ public class Customer {
     private String cust_phone;
     private String cust_mobile;
 
+    // 一个客户有多个联系人
+    private Set<Linkman> linkmans = new HashSet();
+
     @Override
     public String toString() {
         return "Customer{" +
@@ -23,6 +30,7 @@ public class Customer {
                 ", cust_level='" + cust_level + '\'' +
                 ", cust_phone='" + cust_phone + '\'' +
                 ", cust_mobile='" + cust_mobile + '\'' +
+                ", linkmans=" + linkmans +
                 '}';
     }
 }

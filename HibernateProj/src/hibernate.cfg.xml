@@ -40,6 +40,7 @@
 		<property name="current_session_context_class">thread</property>
 
 		<mapping resource="com/Kotori/domain/Customer.hbm.xml"/>
+		<mapping resource="com/Kotori/domain/Linkman.hbm.xml"/>
 
 	</session-factory>
 </hibernate-configuration>
