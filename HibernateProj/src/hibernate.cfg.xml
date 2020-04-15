@@ -36,6 +36,9 @@
 		<!-- 自动创建表 -->
 		<property name="hibernate.hbm2ddl.auto">update</property>
 
+		<!-- 让session自动绑定到当前的threadLocal -->
+		<property name="current_session_context_class">thread</property>
+
 		<mapping resource="com/Kotori/domain/Customer.hbm.xml"/>
 
 	</session-factory>

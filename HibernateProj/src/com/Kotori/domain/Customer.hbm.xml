@@ -6,7 +6,7 @@
     <class name="com.Kotori.domain.Customer" table="customer">
         <!-- 设置主键，name是类中的成员，column是数据库表里的成员，如果两者名字一样则column可以省略 -->
         <id name="cust_id" column="cust_id">
-            <!-- native是自动增长策略 -->
+            <!-- native是自然策略 不同数数据库会选择各自的最优策略 -->
             <generator class="native"></generator>
         </id>
         <property name="cust_industry" column="cust_industry"></property>
